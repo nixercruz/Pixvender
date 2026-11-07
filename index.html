@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixvender - Compra y vende imágenes</title>
+  <link rel="stylesheet" href="Css/estilos.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO: logo y menú -->
+  <header>
+  <div class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="#">Pixvender</a>
+      <div class="menu">
+        <a href="#imagenes">Explorar</a>
+        <a href="#licencias">Licencias</a>
+        <a href="#registro">Vender</a>
+        <a href="#">Ingresar</a>
+      </div>
+    </div>
+  </div>
+  </header>
+
+  <!-- PORTADA: título y buscador -->
+  <div class="portada">
+    <h1>Compra y vende imágenes</h1>
+    <p>Fotografías, ilustraciones y vectores de creadores independientes.</p>
+    <input type="text" placeholder="Busca una imagen...">
+    <button class="boton">Buscar</button>
+  </div>
+
+  <!-- IMÁGENES DESTACADAS -->
+  <div class="contenedor" id="imagenes">
+    <h2>Imágenes recientes</h2>
+
+    <div class="lista-imagenes">
+
+      <!-- Cada tarjeta es una imagen. Copia este bloque para añadir más -->
+      <div class="tarjeta">
+        <img src="Imagenes/imagen1.jpg" alt="Rio y bosque natural">
+        <h3>Rio y bosque natural</h3>
+        <p>Mbappé</p>
+        <p class="precio">$12.000</p>
+        <button class="boton">Comprar</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="Imagenes/imagen2.jpg" alt="Aves volando sobre el mar">
+        <h3>Aves volando sobre el mar</h3>
+        <p>Vinicius</p>
+        <p class="precio">$15.000</p>
+        <button class="boton">Comprar</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="Imagenes/imagen3.jpg" alt="Arbol antiguo en la sabana">
+        <h3>Arbol antiguo en la sabana</h3>
+        <p>Napoleón</p>
+        <p class="precio">$8.000</p>
+        <button class="boton">Comprar</button>
+      </div>
+
+      <div class="tarjeta">
+        <img src="Imagenes/imagen4.jpg" alt="Como vuelan los sueños">
+        <h3>Como vuelan los sueños</h3>
+        <p>Cristiano Ronaldo</p>
+        <p class="precio">$17.000</p>
+        <button class="boton">Comprar</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LICENCIAS -->
+  <div class="contenedor" id="licencias">
+    <h2>Tipos de licencia</h2>
+
+    <div class="lista-licencias">
+      <div class="licencia">
+        <h3>Personal</h3>
+        <p>Para blogs y redes sociales.</p>
+      </div>
+      <div class="licencia">
+        <h3>Comercial</h3>
+        <p>Para publicidad, productos y sitios web de empresas.</p>
+      </div>
+      <div class="licencia">
+        <h3>Extendida</h3>
+        <p>Para reventa y venta de álbunes completos.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- REGISTRO DE VENDEDOR: formulario dentro de la misma página -->
+  <div class="registro" id="registro">
+    <div class="contenedor">
+      <h2>Crea tu cuenta de vendedor</h2>
+      <p>Sube tus imágenes y gana dinero por cada descarga.</p>
+
+      <!-- Cambia action por la dirección donde recibirás los datos -->
+      <form class="formulario" action="#" method="post">
+
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="clave">Contraseña</label>
+        <input type="password" id="clave" name="clave" placeholder="Mínimo 8 caracteres" minlength="8" required>
+
+        <label for="tienda">Nombre de tu portafolio o tienda</label>
+        <input type="text" id="tienda" name="tienda" placeholder="Ej: Estudio Luna" required>
+
+        <label for="tipo">¿Qué vas a vender?</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Elige una opción</option>
+          <option value="fotografia">Fotografía</option>
+          <option value="ilustracion">Ilustración</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="presentacion">Cuéntanos sobre tu trabajo (opcional)</label>
+        <textarea id="presentacion" name="presentacion" rows="4" placeholder="Escribe una breve presentación..."></textarea>
+
+        <div class="terminos">
+          <input type="checkbox" id="terminos" name="terminos" required>
+          <label for="terminos">Acepto los términos y la política de privacidad</label>
+        </div>
+
+        <button class="boton" type="submit">Crear cuenta</button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- PIE DE PÁGINA -->
+  <div class="pie">
+    <p>© 2026 Encuadre</p>
+    <a href="#">Términos</a> |
+    <a href="#">Privacidad</a> |
+    <a href="#">Ayuda</a>
+  </div>
+
+</body>
+</html>
